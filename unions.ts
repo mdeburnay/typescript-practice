@@ -15,13 +15,7 @@ type WithoutC = RemoveC<Letters>; // <-- "a" | "b"
 type WithoutC2 = Exclude<Letters, "c">; // <-- "a" | "b"
 
 /**
- * Or, we can use the Extract type to do the same thing:
+ * Or, if we wanted to get only C from the union, we could use the Extract type:
  */
 
 type OnlyC = Extract<Letters, "c">; // <-- "c"
-
-/**
- * We can also use the NonNullable type to remove null and undefined from a type:
- */
-
-type Nullable = string | null | undefined;
