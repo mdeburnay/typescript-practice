@@ -73,3 +73,7 @@ interface Tab<T> {
 
 type NumberTab = Tab<number>;
 type StringTab = Tab<string>;
+
+/**
+ * In effect, you should want to use a generic when you do NOT know what the type of the data is going to be.
+ */
